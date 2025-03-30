@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Com Rock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Música de fundo -->
+    <audio id="music">
+        <source src="/amon amarth - live for the kill.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="container">
+        <h2>🎸 Gerador de Senhas Com Rock 🎸</h2>
+        <label for="length">Comprimento da Senha:</label>
+        <input class="len" type="number" id="length" min="6" max="20" value="12">
+        <button id="generate">🔥 Gerar Senha 🔥</button>
+        <input type="text" id="password" readonly>
+        <button id="copy">🎵 Copiar 🎵</button>
+
+        <!-- Botão para controlar a música -->
+        <button id="playMusic">▶️ Tocar Música</button>
+        <button id="pauseMusic">⏸️ Pausar Música</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
